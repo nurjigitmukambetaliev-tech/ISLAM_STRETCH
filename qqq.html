@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> ISLAM_STRETCH для натяжных потолков</title>
+  <meta name="description" content="CeilPro — комплектующие для натяжных потолков: профили, багеты, светильники, крепеж. Красивый демо-сайт с корзиной и анимациями." />
+  <link rel="stylesheet" href="./qqq.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="CeilPro — Главная">
+        <div class="logo">ISLAM<span class="logo-dot">STRETCH</span></div>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#products">Каталог</a>
+        <a href="#about">О компании</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchToggle" class="icon-btn" title="Поиск">🔍</button>
+        <button id="themeToggle" class="icon-btn" title="Тёмная тема">🌗</button>
+        <button id="cartOpen" class="cart-btn" aria-controls="cartPanel" aria-expanded="false">
+          🛒 <span id="cartBadge" class="badge">0</span>
+        </button>
+      </div>
+    </div>
+    <div id="searchBox" class="search-box hide" aria-hidden="true">
+      <div class="container">
+        <input id="globalSearch" type="search" placeholder="Поиск по товарам, категориям..." aria-label="Поиск по товарам" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>ISLAM_STRETCH — комплектующие для натяжных потолков</h1>
+          <p class="lead">Профили, багеты, светильники и крепёж с гарантией качества. Подберите всё необходимое для профессионального монтажа.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#products">Перейти в каталог</a>
+            <button class="btn ghost" id="openOffer">Получить консультацию</button>
+          </div>
+
+          <ul class="hero-features">
+            <li>Быстрая доставка по региону</li>
+            <li>Гарантия на комплектующие</li>
+            <li>Профессиональная техподдержка</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="promo-card">
+            <div class="promo-head">
+              <div class="promo-title">Скидка 10% на первый заказ</div>
+              <div class="promo-sub muted">Код: <strong>ISLAM10,85</strong></div>
+            </div>
+            <div class="promo-visual" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" class="promo-svg">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#7c3aed"/>
+                    <stop offset="1" stop-color="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="200" height="120" rx="14" fill="url(#g1)" opacity="0.12"/>
+                <g transform="translate(18,20)">
+                  <rect x="0" y="0" width="64" height="16" rx="4" fill="#fff" opacity="0.9"/>
+                  <rect x="0" y="28" width="120" height="8" rx="4" fill="#fff" opacity="0.75"/>
+                  <rect x="0" y="46" width="84" height="8" rx="4" fill="#fff" opacity="0.6"/>
+                </g>
+              </svg>
+            </div>
+            <div class="promo-actions">
+              <button class="btn" id="applyFirst10">Применить код</button>
+              <a href="#contact" class="btn ghost">Связаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Каталог комплектующих</h2>
+          <div class="controls">
+            <div class="control">
+              <label for="catSelect">Категория</label>
+              <select id="catSelect">
+                <option value="all">Все</option>
+              </select>
+            </div>
+            <div class="control">
+              <label for="sortSelect">Сортировать</label>
+              <select id="sortSelect">
+                <option value="popular">По популярности</option>
+                <option value="price-asc">Цена: по возрастанию</option>
+                <option value="price-desc">Цена: по убыванию</option>
+                <option value="new">Новые</option>
+              </select>
+            </div>
+            <div class="control search-inline">
+              <input id="inlineSearch" placeholder="Поиск по каталогу..." />
+            </div>
+          </div>
+        </div>
+
+        <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section bg-soft">
+      <div class="container about-grid">
+        <div>
+          <h3>О Hac</h3>
+          <p>Мы поставляем профессиональные комплектующие для натяжных потолков более 10 лет. У нас — сертифицированные материалы, гибкая логистика и поддержка монтажных бригад.</p>
+          <ul class="list">
+            <li>Широкий ассортимент</li>
+            <li>Техподдержка и консультации</li>
+            <li>Оптовые и розничные поставки</li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="mock-panel">
+            <div class="strip"></div>
+            <div class="strip small"></div>
+            <div class="strip"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2>Отзывы клиентов</h2>
+        <div id="reviewsCarousel" class="reviews-carousel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section bg-soft">
+      <div class="container">
+        <h2>Вопросы и ответы</h2>
+        <div id="faqList" class="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Свяжитесь с нами</h2>
+          <p class="muted">Оставьте данные, и мы перезвоним в рабочее время.</p>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>Имя <input id="cfName" required /></label>
+            <label>Email <input id="cfEmail" type="email" required /></label>
+            <label>Телефон <input id="cfPhone" /></label>
+            <label>Сообщение <textarea id="cfMessage" rows="4" required></textarea></label>
+            <div class="form-row">
+              <button type="submit" class="btn primary">Отправить</button>
+              <button type="button" class="btn ghost" id="contactReset">Очистить</button>
+            </div>
+            <div id="contactNotice" class="muted small" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <h3>Контакты</h3>
+          <p class="muted">Бишкек, Кыргызстан • +996 706 25 55 00 • hello@ISLAM_STRETCH.example</p>
+          <div class="small">
+            <strong>График работы:</strong><br/>Пн–Bc:Рабочий день./Пт:Выходной| 09:00–18:00
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- CART PANEL -->
+  <aside id="cartPanel" class="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Корзина</h3>
+      <button class="icon-btn" id="cartClose" aria-label="Закрыть корзину">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items" role="list"></div>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <div>Итого:</div>
+        <div class="cart-total" id="cartTotal">0 ₽</div>
+      </div>
+      <div class="cart-actions">
+        <input id="couponInput" placeholder="Купон (FIRST10)" />
+        <button class="btn" id="applyCoupon">Применить</button>
+        <button class="btn primary" id="checkoutBtn">Оформить заказ</button>
+      </div>
+      <button class="btn ghost" id="clearCart">Очистить корзину</button>
+    </div>
+  </aside>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand small">
+        <div class="logo small">ISLAM_STRETCH</div>
+        <div class="muted">© <span id="year"></span> ISLAM_STRETCH — все права защищены</div>
+      </div>
+      <div class="muted small">Демо-сайт. Не храните реальные платежные данные.</div>
+    </div>
+  </footer>
+
+  <script src="./qqq.js"></script>
+</body>
+</html>
